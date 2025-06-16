@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Survey Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <div class="max-w-4xl mx-auto bg-white p-8 shadow rounded-md">
+    <h2 class="text-2xl font-bold mb-6">Customer Feedback Survey</h2>
+
+    <!-- Name -->
+    <div class="mb-4">
+      <label class="block font-semibold mb-1">Name <span class="text-red-500">*</span></label>
+      <div class="flex gap-4">
+        <input type="text" placeholder="First" class="w-1/2 border p-2 rounded" />
+        <input type="text" placeholder="Last" class="w-1/2 border p-2 rounded" />
+      </div>
+    </div>
+
+    <!-- Email -->
+    <div class="mb-4">
+      <label class="block font-semibold mb-1">Email <span class="text-red-500">*</span></label>
+      <input type="email" class="w-full border p-2 rounded" placeholder="you@example.com" />
+    </div>
+
+    <!-- Experience Rating -->
+    <div class="mb-4">
+      <label class="block font-semibold mb-1">Your Experience <span class="text-red-500">*</span></label>
+      <div class="flex items-center space-x-1 text-yellow-400 text-xl">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+      </div>
+      <p class="text-sm text-gray-500 mt-1">Overall, how would you rate your experience with us?</p>
+    </div>
+
+    <!-- Satisfaction Table -->
+    <div class="mb-6">
+      <label class="block font-semibold mb-2">How satisfied are you with <span class="text-red-500">*</span></label>
+      <table class="w-full text-sm border">
+        <thead>
+          <tr class="bg-gray-100">
+            <th class="p-2 text-left"> </th>
+            <th class="p-2">Very Unsatisfied</th>
+            <th class="p-2">Unsatisfied</th>
+            <th class="p-2">Neutral</th>
+            <th class="p-2">Satisfied</th>
+            <th class="p-2">Very Satisfied</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-t">
+            <td class="p-2">Purchase</td>
+            <td class="text-center"><input type="radio" name="purchase" /></td>
+            <td class="text-center"><input type="radio" name="purchase" /></td>
+            <td class="text-center"><input type="radio" name="purchase" /></td>
+            <td class="text-center"><input type="radio" name="purchase" /></td>
+            <td class="text-center"><input type="radio" name="purchase" /></td>
+          </tr>
+          <tr class="border-t">
+            <td class="p-2">Service</td>
+            <td class="text-center"><input type="radio" name="service" /></td>
+            <td class="text-center"><input type="radio" name="service" /></td>
+            <td class="text-center"><input type="radio" name="service" /></td>
+            <td class="text-center"><input type="radio" name="service" /></td>
+            <td class="text-center"><input type="radio" name="service" /></td>
+          </tr>
+          <tr class="border-t">
+            <td class="p-2">Company Overall</td>
+            <td class="text-center"><input type="radio" name="overall" /></td>
+            <td class="text-center"><input type="radio" name="overall" /></td>
+            <td class="text-center"><input type="radio" name="overall" /></td>
+            <td class="text-center"><input type="radio" name="overall" /></td>
+            <td class="text-center"><input type="radio" name="overall" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Likelihood Table -->
+    <div class="mb-6">
+      <label class="block font-semibold mb-2">How likely are you to <span class="text-red-500">*</span></label>
+      <table class="w-full text-sm border">
+        <thead>
+          <tr class="bg-gray-100">
+            <th class="p-2 text-left"> </th>
+            <th class="p-2">Very Unlikely</th>
+            <th class="p-2">Unlikely</th>
+            <th class="p-2">Neutral</th>
+            <th class="p-2">Likely</th>
+            <th class="p-2">Very Likely</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-t">
+            <td class="p-2">Buy from us again</td>
+            <td class="text-center"><input type="radio" name="buyagain" /></td>
+            <td class="text-center"><input type="radio" name="buyagain" /></td>
+            <td class="text-center"><input type="radio" name="buyagain" /></td>
+            <td class="text-center"><input type="radio" name="buyagain" /></td>
+            <td class="text-center"><input type="radio" name="buyagain" /></td>
+          </tr>
+          <tr class="border-t">
+            <td class="p-2">Recommend our product to others</td>
+            <td class="text-center"><input type="radio" name="recommendproduct" /></td>
+            <td class="text-center"><input type="radio" name="recommendproduct" /></td>
+            <td class="text-center"><input type="radio" name="recommendproduct" /></td>
+            <td class="text-center"><input type="radio" name="recommendproduct" /></td>
+            <td class="text-center"><input type="radio" name="recommendproduct" /></td>
+          </tr>
+          <tr class="border-t">
+            <td class="p-2">Recommend our company to others</td>
+            <td class="text-center"><input type="radio" name="recommendcompany" /></td>
+            <td class="text-center"><input type="radio" name="recommendcompany" /></td>
+            <td class="text-center"><input type="radio" name="recommendcompany" /></td>
+            <td class="text-center"><input type="radio" name="recommendcompany" /></td>
+            <td class="text-center"><input type="radio" name="recommendcompany" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Additional Comments -->
+    <div class="mb-6">
+      <label class="block font-semibold mb-1">Additional comments or suggestions</label>
+      <textarea class="w-full border p-2 rounded" rows="4" placeholder="Your comments..."></textarea>
+    </div>
+
+    <!-- Submit Button -->
+    <div>
+      <button class="bg-gray-800 text-white px-6 py-2 rounded hover:bg-gray-700">Submit</button>
+    </div>
+  </div>
+</body>
+</html>
